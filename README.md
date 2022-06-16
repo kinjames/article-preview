@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-RhVb_D8HQc)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/article-preview-component-4M3TJ8mCpp)
 - Live Site URL: [Github](https://kinjames.github.io/article-preview/)
 
 ## My process

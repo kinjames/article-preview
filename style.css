@@ -124,12 +124,12 @@ h1 {
     margin-bottom: 10px;
 }
 
-.span-img {
+.img2 {
     display: flex;
     gap: 10px;
 }
 
-.span-para {
+.para3 {
     text-transform: uppercase;
     color: hsl(212, 23%, 69%);
 }
