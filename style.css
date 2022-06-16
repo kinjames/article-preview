@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+}
+
+h1 {
+    font-size: 20px;
+    color: hsl(217, 19%, 35%);
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.image {
+    width: 40%;
+    height: 100%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.text {
+    width: 60%;
+    height: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.para {
+    color: hsl(212, 23%, 69%);
+    margin-bottom: 20px;
+}
+
+.name-share {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    display: flex;
+    gap: 15px;
+}
+
+.avatar{
+    width: 15%;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.name-date {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.para1 {
+    color: hsl(217, 19%, 35%);
+    font-weight: bold;
+}
+
+.para2 {
+    color: hsl(212, 23%, 69%);
+}
+
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 19%, 35%) ;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: hsl(217, 19%, 35%);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px;
+    margin-bottom: 10px;
+}
+
+.span-img {
+    display: flex;
+    gap: 10px;
+}
+
+.span-para {
+    text-transform: uppercase;
+    color: hsl(212, 23%, 69%);
+}
+  
+.active .tooltiptext {
+    visibility: visible;
+}
+
+.share .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+
+footer {
+    margin-top: 50px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    font-size: 16px; 
+}
+
+  
+
+
+@media only screen and (max-width:1200px) {
+    body{
+        padding: 30px;
+    }
+    .container {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    body{
+        padding: 30px;
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    html,body,main,footer,.container,.image,.text{
+        width: 100%;
+    }
+
+    body {
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    .para{
+        font-size: 14px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .image img{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .text{
+        border-radius: 0 0 10px 10px;
+    }
+
+    .avatar{
+        width: 20%;
+    }
+
+    .share .tooltiptext {
+        top: -5px;
+        right: 105%;
+        bottom: unset;
+        left: unset;
+        margin-left: unset;
+        margin-bottom: unset;
+    }
+
+    .share .tooltiptext::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent transparent hsl(217, 19%, 35%);
+    }
+}
+
